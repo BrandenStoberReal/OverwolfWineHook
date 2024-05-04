@@ -19,6 +19,7 @@ if (File.Exists(mshtmlPath))
     {
         Console.WriteLine($"Error: {ex.Message}");
         Console.WriteLine("Press any key to exit...");
+        Console.ReadLine();
     }
     return;
 }
