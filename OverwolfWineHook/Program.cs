@@ -13,14 +13,13 @@ if (File.Exists(mshtmlPath))
         versionResource.SaveTo(mshtmlPath);
         Console.WriteLine("Version change success! MSHTML is now emulating IE 11!");
         Console.WriteLine("Press any key to continue...");
-        Console.ReadLine();
     }
     catch (Exception ex)
     {
         Console.WriteLine($"Error: {ex.Message}");
         Console.WriteLine("Press any key to exit...");
-        Console.ReadLine();
     }
+    Console.ReadLine();
     return;
 }
 else
